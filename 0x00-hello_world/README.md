@@ -1,1 +1,1 @@
-scripting 5-printf.c
+scripting 6-size.c
