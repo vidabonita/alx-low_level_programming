@@ -12,7 +12,7 @@ int  _strlen(char *s)
 
 	i = 0;
 	while (s[i] != '\0')
-        	i++;
+		i++;
 	return (i);
 }
 
@@ -27,12 +27,12 @@ void rev_string(char *s)
 	char v, d;
 
 	l = _strlen(s) - 1;
- 	i = 0;
+	i = 0;
 	while (i < l)
 	{
 	    v = s[i];
 	    d = s[l];
-            s[i++] = d;
-            s[l--] = v;
+	    s[i++] = d;
+	    s[l--] = v;
 	}
 }	
