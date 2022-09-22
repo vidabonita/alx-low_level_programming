@@ -33,7 +33,7 @@ int _strcmp(char *s1, char *s2)
 
 	while (c <= lim)
 	{
-		if(s1[c] == s2[c])
+		if (s1[c] == s2[c])
 		{
 			c++;
 			continue;
