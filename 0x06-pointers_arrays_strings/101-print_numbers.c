@@ -1,4 +1,3 @@
-#Task 9 – 101-print_number.c
 #include "main.h"
 
 /**
