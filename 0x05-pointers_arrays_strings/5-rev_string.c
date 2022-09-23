@@ -1,38 +1,26 @@
-#include "main.h"
-#include <stdio.h>
-
+#include "holberton.h"
 /**
- * _strlen - prints the length of a given string
- * @s: the string itself
- * Return: return the length of a string
- */
-int  _strlen(char *s)
-{
-	int i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-/**
- * rev_string - a function to reverse a string
- * @s: the string to reverse
- * Return: nothing
+ * rev_string - reverses a string
+ * _putchar - print each character
+ * @s: char to check
+ *
+ * Description: This will reverse a string
+ * Return: 0 is success
  */
 void rev_string(char *s)
 {
-	int i, l;
-	char v, d;
+	int a = 0, b, c;
+	char d;
 
-	l = _strlen(s) - 1;
-	i = 0;
-	while (i < l)
+	while (s[a] != '\0')
 	{
-	    v = s[i];
-	    d = s[l];
-	    s[i++] = d;
-	    s[l--] = v;
+		a++;
+	}
+	c = a - 1;
+	for (b = 0; c >= 0 && b < c; c--, b++)
+	{
+		d = s[b];
+		s[b] = s[c];
+		s[c] = d;
 	}
 }	
