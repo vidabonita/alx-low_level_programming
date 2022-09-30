@@ -6,6 +6,6 @@
 * int prototypes ( )
 */
 
-Int _putchar(char c)
+int _putchar(char c)
 
 #endif /* MAIN_H */
